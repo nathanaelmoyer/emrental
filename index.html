@@ -1,114 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home Page</title>
-<link rel="icon" href="tab.ico">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="css1.css">
-<!-- <link rel="stylesheet" href="font-awesome.min.css"> -->
-
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-div.ex1 {
-  max-width: 100%;
-}
-body {
-  background: rgb(209, 209, 209);
-}
-
-.content {
-  max-width: 1200px;
-  margin: auto;
-  background: white;
-  padding: 0px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EM Rentals</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #2c3e50; color: white; padding: 1rem; text-align: center; }
+    section { padding: 2rem; max-width: 800px; margin: auto; }
+    .btn { background-color: #27ae60; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; display: inline-block; }
+    footer { background: #eee; text-align: center; padding: 1rem; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-      <!--<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-cog fa-spin fa-1x"></i></a>-->
-      <a href="Homepage.htm" class="w3-bar-item w3-button w3-padding-medium w3-white">Home</a>
-      <a href="resume.htm" class="w3-bar-item w3-button w3-padding-medium w3-hover-white">Resume</a>
-      <a href="Portfolio.htm" class="w3-bar-item w3-button w3-padding-medium w3-hover-white">Portfolio</a>
-      <a href="Contact.htm" class="w3-bar-item w3-button w3-padding-medium w3-hover-white">Contact</a>
-    </div>
-  
-    <!-- Navbar on small screens -->
-    <!--<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-      <a href="resume.htm" class="w3-bar-item w3-button w3-padding-large">Resume</a>
-      <a href="Portfolio.htm" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
-      <a href="Contact.htm" class="w3-bar-item w3-button w3-padding-large">Contact</a>
-    </div>-->
-  </div>
-
-<div class="content">
-  <!-- Header -->
-  <header class="ex1 w3-container w3-red w3-center" style="padding:64px 16px">
-    <h1 class="w3-margin w3-jumbo">Nathanael Moyer</h1>
-    
+  <header>
+    <h1>EM Rentals</h1>
+    <p>Affordable, reliable housing in Your City</p>
   </header>
 
-  <!-- First Grid -->
-  <div class="w3-row-padding w3-padding-32 w3-container">
-    <div class="w3-content">
-      <h5 >Hello! Thank you for visiting my website! My name is Nathanael Moyer and I am a IT professional and tech enthusiast. Here you will find information on my work experience as well as my personal and professional projects.</h5>
-      <img src="images\home page\headshot.jpg" alt="Headshot" style="max-width:500px;max-height:400px; max-width: 100%;object-fit: contain;">
-      <br>
+  <section>
+    <h2>Pay Rent Online</h2>
+    <p>Use our secure payment portal to pay your rent conveniently with Stripe.</p>
+    <a class="btn" href="https://checkout.stripe.com/pay/your-checkout-link">Make a Payment</a>
+  </section>
 
-      <h5 >Check out my <a href="resume.htm" target="_self">resume:</a> </h5>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:contact@emrental.com">contact@emrental.com</a><br>
+       <!-- Phone: (555) 123-4567 --></p>
+  </section>
 
-      
-      <a href="resume.htm">
-        <button class="w3-button w3-padding-medium w3-large" type="submit">
-          <img src="images\home page\resume.png" alt="Resume" style="float:left;max-width:250px;max-height:500px;max-width: 100%;object-fit: contain;">
-        </button>
-      </a>
-        
-      <h5>or my <a href="portfolio.htm" target="_self">portfolio</a> while you're here!</h5>
-      <a href="Portfolio.htm">
-        <button class="w3-button w3-padding-medium w3-large" type="submit">
-          <img src="images\home page\portfolio.png" alt="Resume" style="max-width:500px;max-height:500px;max-width: 100%;object-fit: contain;">
-        </button>
-      </a>
-        
-    </div>
-    <h5 class></h5>
+  <section id="policies">
+    <h2>Policies</h2>
+    <h3>Refund / Cancellation</h3>
+    <p>
+      Payments are non-refundable. In cases of lease termination or approved early move-out, please contact us to discuss potential adjustments.
+    </p>
+    <h3>Privacy Notice</h3>
+    <p>
+      We collect limited personal info solely to process your rent. We do not sell or share your data.
+    </p>
+  </section>
 
-    
-
-  </div>
-
-
-
-
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-32">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <p>Powered by <a href="https://www.linkedin.com/in/nathanael-moyer-8347b2178?trk=people-guest_people_search-card" target="_self">Intel</a></p>
+  <footer>
+    &copy; 2025 EM Rentals. All rights reserved.
   </footer>
-</div>
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
 </body>
 </html>
